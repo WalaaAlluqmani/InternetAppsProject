@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <link rel="icon" type="image/png" href="C:\Users\wloow\Dropbox\PC\Desktop\InternetApps_Project\FaviconGreen.png">
+
+      <link rel="stylesheet" href="Style.css">
+
+      <title>Indoor Plants - Gherass Shop</title>
+
+      <style>
+
+      </style>
+
+</head>
+
+<body class="body-indoor">
+      <div >
+   <header>
+         <a href="Home.html"   target="_blank"> 
+         <img src="Gherass Logo.png" alt="Gherass Logo"  width="80" height="100" align="left"></a>
+
+ <div class="searchbar">
+          <input type="search" id="mySearch" placeholder="Search in the shop..." >
+          <span class="icon"><ion-icon name="search-outline"></ion-icon></span></input>
+
+</div>
+
+     
+<div class="cart">
+         <a href="Log In.html" class="Login"  target="_blank"> Login </a>
+           &nbsp; &nbsp;<i class="line">    </i>  &nbsp;  &nbsp; 
+         <a href="Cart.html" class="ShoppingCartimg" target="_blank"> 
+        <span class="icon"><ion-icon name="cart"></ion-icon></span></a>
+
+   </div>
+
+   </header>
+   <nav>
+
+       <ul>
+          <li><a href="Home.html">Home</a>
+               <a href="PlantCareGuide.html">Plant Care Guide</a>
+               <a href="Shop.html">Shop</a>
+              <a href="Projects.html">National Projects</a>
+             <a href="FAQs.html">FAQs</a>
+             <a href="About Us.html">About</a></li>
+       <ul>
+ </nav>
+
+            <header class="headerFAQs">
+                  <h1 id="h1-id-FAQs">Indoor plants</h1>
+            </header>
+
+            <main class="main-indoor">
+
+                  <div class="div-main-indoor">
+
+                        <div class="plant">
+                              <img src="DracaenaDorado.jpg" width="260px" height="200px" alt="Dracaena Dorado">
+                              <h2>Dracaena Dorado</h2>
+                              <p>Price: 30$</p>
+                              <div class="quantity-wrapper">
+                                    <input type="number" id="quantity_Dracaena_Dorado" name="quantity_Dracaena_Dorado"
+                                          min="1" value="1">
+                                    <button
+                                          onclick="addToCart('Dracaena Dorado', document.getElementById('quantity_Dracaena_Dorado').value)">Add
+                                          to Cart</button>
+                              </div>
+
+
+                        </div>
+
+
+
+                        <div class="plant">
+                              <img src="Bonsai.jpg" width="260px" height="200px" alt="Medium bonsai">
+                              <h2>Medium bonsai</h2>
+                              <p>Price: 26$</p>
+                              <div class="quantity-wrapper">
+                                    <input type="number" id="quantity_Medium_bonsai" name="quantity_Medium_bonsai"
+                                          min="1" value="1">
+                                    <button
+                                          onclick="addToCart('Medium bonsai', document.getElementById('quantity_Medium_bonsai').value)">Add
+                                          to Cart</button>
+                              </div>
+                        </div>
+
+                        <!-- Plant 3: Bamboo -->
+                        <div class="plant">
+                              <img src="bamboo.jpg" width="260px" height="200px" alt="Bamboo">
+                              <h2>Bamboo</h2>
+                              <p>Price: 24$</p>
+                              <div class="quantity-wrapper">
+                                    <input type="number" id="quantity_Bamboo" name="quantity_Bamboo" min="1" value="1">
+                                    <button
+                                          onclick="addToCart('Bamboo', document.getElementById('quantity_Bamboo').value)">Add
+                                          to Cart</button>
+                              </div>
+                        </div>
+
+                        <!-- Plant 4: Pots -->
+                        <div class="plant">
+                              <img src="Pots.jpg" width="260px" height="200px" alt="Pots">
+                              <h2>Pots</h2>
+                              <p>Price: 11$</p>
+                              <div class="quantity-wrapper">
+                                    <input type="number" id="quantity_Pots" name="quantity_Pots" min="1" value="1">
+                                    <button
+                                          onclick="addToCart('Pots', document.getElementById('quantity_Pots').value)">Add
+                                          to Cart</button>
+                              </div>
+                        </div>
+
+
+                        <!-- Plant 5: Pachira -->
+                        <div class="plant">
+                              <img src="Pachira.jpg" width="260px" height="200px" alt="Pachira">
+                              <h2>Pachira</h2>
+                              <p>Price: 18$</p>
+                              <div class="quantity-wrapper">
+                                    <input type="number" id="quantity_Pachira" name="quantity_Pachira" min="1"
+                                          value="1">
+                                    <button
+                                          onclick="addToCart('Pachira', document.getElementById('quantity_Pachira').value)">Add
+                                          to Cart</button>
+                              </div>
+                        </div>
+
+                        <!-- Plant 6: Cordyline Tango -->
+                        <div class="plant">
+                              <img src="CordylineTango.jpg" width="260px" height="200px" alt="Cordyline Tango">
+                              <h2>Cordyline Tango</h2>
+                              <p>Price: 10$</p>
+                              <div class="quantity-wrapper">
+                                    <input type="number" id="quantity_Cordyline_Tango" name="quantity_Cordyline_Tango"
+                                          min="1" value="1">
+                                    <button
+                                          onclick="addToCart('Cordyline Tango', document.getElementById('quantity_Cordyline_Tango').value)">Add
+                                          to Cart</button>
+                              </div>
+                        </div>
+
+                        <!-- Plant 7: Dieffenbachia camilla -->
+                        <div class="plant">
+                              <img src="Dieffenbachiacamilla.jpg" width="260px" height="200px"
+                                    alt="Dieffenbachia camilla">
+                              <h2>Dieffenbachia camilla</h2>
+                              <p>Price: 20$</p>
+                              <div class="quantity-wrapper">
+                                    <input type="number" id="quantity_Dieffenbachia_camilla"
+                                          name="quantity_Dieffenbachia_camilla" min="1" value="1">
+                                    <button
+                                          onclick="addToCart('Dieffenbachia camilla', document.getElementById('quantity_Dieffenbachia_camilla').value)">Add
+                                          to Cart</button>
+                              </div>
+                        </div>
+
+
+                       <!-- Plant 8: Green Peperomia -->
+<div class="plant">
+    <img src="PeperomiaGreen.jpg" width="260px" height="200px" alt="Green Peperomia">
+    <h2>Green Peperomia</h2>
+    <p>Price: 15$</p>
+    <div class="quantity-wrapper">
+        <input type="number" id="quantity_Green_Peperomia" name="quantity_Green_Peperomia" min="1" value="1">
+        <button onclick="addToCart('Green Peperomia', document.getElementById('quantity_Green_Peperomia').value)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Plant 9: Calathea Orbifolia -->
+<div class="plant">
+    <img src="CalatheaOrbifolia.jpg" width="260px" height="200px" alt="Calathea Orbifolia">
+    <h2>Calathea Orbifolia</h2>
+    <p>Price: 20$</p>
+    <div class="quantity-wrapper">
+        <input type="number" id="quantity_Calathea_Orbifolia" name="quantity_Calathea_Orbifolia" min="1" value="1">
+        <button onclick="addToCart('Calathea Orbifolia', document.getElementById('quantity_Calathea_Orbifolia').value)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Plant 10: Alocasia -->
+<div class="plant">
+    <img src="Alocasia.jpg" width="260px" height="200px" alt="Alocasia">
+    <h2>Alocasia</h2>
+    <p>Price: 22$</p>
+    <div class="quantity-wrapper">
+        <input type="number" id="quantity_Alocasia" name="quantity_Alocasia" min="1" value="1">
+        <button onclick="addToCart('Alocasia', document.getElementById('quantity_Alocasia').value)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Plant 11: Ficus benjamina -->
+<div class="plant">
+    <img src="Ficusbenjamina.jpg" width="260px" height="200px" alt="Ficus benjamina">
+    <h2>Ficus benjamina</h2>
+    <p>Price: 18$</p>
+    <div class="quantity-wrapper">
+        <input type="number" id="quantity_Ficus_benjamina" name="quantity_Ficus_benjamina" min="1" value="1">
+        <button onclick="addToCart('Ficus benjamina', document.getElementById('quantity_Ficus_benjamina').value)">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Plant 12: Yucca -->
+<div class="plant">
+    <img src="Yucca.jpg" width="260px" height="200px" alt="Yucca">
+    <h2>Yucca</h2>
+    <p>Price: 13$</p>
+    <div class="quantity-wrapper">
+        <input type="number" id="quantity_Yucca" name="quantity_Yucca" min="1" value="1">
+        <button onclick="addToCart('Yucca', document.getElementById('quantity_Yucca').value)">Add to Cart</button>
+    </div>
+</div>
+
+
+                  </div> <br>
+            </main> <br>
+
+ <footer >
+ <div class="social-icons"> 
+
+         <a href="https://www.instagram.com/Gherass2024"  target="_blank"> 
+         <img src="InstaGreenIcon.png" alt="Instagram" width="20" height="20"> </a>
+
+         <a href="https://twitter.com/Gherass2024"  target="_blank"> 
+         <img src="TwitterGreenIcon.png" alt="Twitter" width="20" height="20"> </a>
+
+         <a href="https://web.whatsapp.com/0507323496"   target="_blank"> 
+         <img src="WhattsAppGreenIcon.png" alt="Whattsapp" width="20" height="20"> </a>
+
+
+         <a href="https://sa.linkedin.com/company/Gherass2024"   target="_blank"> 
+         <img src="LinkedinIconGreen.png" alt="Linkedin" width="20" height="20"> </a>
+
+        <br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All rights reserved 2024  &copy; Gherass🌳<br>
+        </div>
+
+ </footer>
+ </div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+      <link rel="icon" type="image/png"
+      href="C:\Users\wloow\Dropbox\PC\Desktop\InternetApps_Project\FaviconGreen.png">
+      
+      <link rel="stylesheet" href="Style.css">
+    
+      <title> Sing Up - Gherass Shop</title>
+<script>
+   
+    function validateForm(event) {
+  event.preventDefault(); // Prevent form submission if validation fails
+
+  // Get form values
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+
+  // Validate name (must not be empty)
+  if (name === "") {
+    alert("Name is required");
+    return;
+  }
+
+  // Validate email (must be a valid email address)
+  var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (!email.match(emailRegex)) {
+    alert("Invalid email address");
+    return;
+  }
+
+  // Validate password (must be at least 8 characters long)
+  if (password.length < 4) {
+    alert("Password must be at least 4 characters long");
+    return;
+  
+}
+
+  // If all validations pass, show the home button
+  document.getElementById("signup").style.display = "inline";
+  window.location.href = "home.html";
+ }
+
+</script>
+ </head>
+<body>
+      <div >
+   <header>
+         <a href="Home.html"   target="_blank"> 
+         <img src="Gherass Logo.png" alt="Gherass Logo"  width="80" height="100" align="left"></a>
+
+ <div class="searchbar">
+          <input type="search" id="mySearch" placeholder="Search in the shop..." >
+          <span class="icon"><ion-icon name="search-outline"></ion-icon></span></input>
+
+</div>
+
+     
+<div class="cart">
+         <a href="Log In.html" class="Login"  target="_blank"> Login </a>
+           &nbsp; &nbsp;<i class="line">    </i>  &nbsp;  &nbsp; 
+         <a href="Cart.html" class="ShoppingCartimg" target="_blank"> 
+        <span class="icon"><ion-icon name="cart"></ion-icon></span></a>
+
+   </div>
+
+   </header>
+ <div class="bodyLog-Sign">
+   <nav>
+
+       <ul>
+          <li><a href="Home.html">Home</a>
+               <a href="PlantCareGuide.html">Plant Care Guide</a>
+               <a href="Shop.html">Shop</a>
+              <a href="Projects.html">National Projects</a>
+             <a href="FAQs.html">FAQs</a>
+             <a href="About Us.html">About</a></li>
+       <ul>
+ </nav>
+<h2 class="myAccount"></h2>
+ <main class="sa">
+
+   <div class="wrapper">
+  <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+
+        <div class="form-box login">
+              <h2>Registration</h2>
+                  <form action="#" >
+
+
+                                    <div class="input-box">
+                                  <span class="icon"><ion-icon name="person"></ion-icon></span>
+                                           <input type="text" id="name" required="required">
+                                               <label>Name</label>
+                             </div> 
+                           <div class="input-box">
+                                  <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                                           <input type="email" id="email" required="required">
+                                               <label>Email</label>
+                             </div>
+                               <div class="input-box">
+                                  <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                                           <input type="password" id="password"  required="required">
+                                               <label>Password</label>
+                             </div>
+
+ <div class="remember-forgot">
+                              
+                                          <label><input type="checkbox">I agree to the terms & conditions </label>
+                                   
+                             </div>
+<button type="submit" id="signup" class="btn"  onclick="validateForm(event)">Register</button>
+
+ <div class="login-regisster">
+                               <p>Already have an account? <a href="Log In.html">Login</a></p>
+                             </div>
+
+
+    </main>
+ <footer>
+ <div class="social-icons"> 
+
+         <a href="https://www.instagram.com/Gherass2024"  target="_blank"> 
+         <img src="InstaGreenIcon.png" alt="Instagram" width="20" height="20"> </a>
+
+         <a href="https://twitter.com/Gherass2024"  target="_blank"> 
+         <img src="TwitterGreenIcon.png" alt="Twitter" width="20" height="20"> </a>
+
+         <a href="https://web.whatsapp.com/0507323496"   target="_blank"> 
+         <img src="WhattsAppGreenIcon.png" alt="Whattsapp" width="20" height="20"> </a>
+
+
+         <a href="https://sa.linkedin.com/company/Gherass2024"   target="_blank"> 
+         <img src="LinkedinIconGreen.png" alt="Linkedin" width="20" height="20"> </a>
+
+        <br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All rights reserved 2024  &copy; Gherass🌳<br>
+        </div>
+
+ </footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ </body>
+</html>
